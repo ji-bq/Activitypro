@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Activitylife extends AppCompatActivity {
     private static final String TAG = "Activitylife";
@@ -20,7 +21,9 @@ public class Activitylife extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Activitylife.this,ActivitySecond.class);
-                startActivity(intent);
+               startActivity(intent);
+                Toast.makeText(Activitylife.this, "You clicked The Button!", Toast.LENGTH_SHORT).show();
+                
             }
         });
 
