@@ -21,9 +21,10 @@ public class Activitylife extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Activitylife.this,ActivitySecond.class);
+                intent.putExtra("name","this is intent");
                startActivity(intent);
-                Toast.makeText(Activitylife.this, "You clicked The Button!", Toast.LENGTH_SHORT).show();
-                
+                //Toast.makeText(Activitylife.this, "You clicked The Button!", Toast.LENGTH_SHORT).show();
+
             }
         });
 
