@@ -15,7 +15,7 @@ public class ActivitySecond extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         String information=getIntent().getStringExtra("name");
-        Toast.makeText(ActivitySecond.this, "information", Toast.LENGTH_SHORT).show();
+        Toast.makeText(ActivitySecond.this, information, Toast.LENGTH_SHORT).show();
 
     }
 }
